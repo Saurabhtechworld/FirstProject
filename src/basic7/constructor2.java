@@ -46,7 +46,7 @@ package basic7;
 //            String name;
 //            int age;
 //
-//           Student(){
+//            Student(){
 //            s1.name = "Saurabh";
 //            s1.age = 21;
 //            }
@@ -66,20 +66,42 @@ package basic7;
 //   PARAMETRIZED CONSTRUCTOR
 //   Agar har student ka naam alag ho
 
-        class Student {
-            String name;
+//        class Student {
+//            String name;
+//
+//            Student(String n){
+//                name = n;
+//            }
+//        }
+//
+//        public class constructor2 {
+//            static void main(String[] args) {
+//                Student s1 = new Student("Saurabh");
+//                Student s2 = new Student("Saur");
+//
+//                System.out.println(s1.name);
+//                System.out.println(s2.name);
+//            }
+//        }
 
-            Student(String n){
-                name = n;
-            }
-        }
 
-        public class constructor2 {
-            static void main(String[] args) {
-                Student s1 = new Student("Saurabh");
-                Student s2 = new Student("Saur");
+//   THIS mETHODS
 
-                System.out.println(s1.name);
-                System.out.println(s2.name);
-            }
-        }
+class Student {
+    String name;
+
+    Student(String name) {
+        this.name = name;
+    }
+
+    void display() {
+        System.out.println(name);
+    }
+}
+
+public class constructor2 {
+    public static void main(String[] args) {
+        Student s1 = new Student("Saurabh");
+        s1.display();
+    }
+}
